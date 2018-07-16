@@ -1,0 +1,47 @@
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<title>演示：SweetAlert - 演示6种不同的提示框效果</title>
+
+
+
+<link rel="stylesheet" type="text/css" href="sweetalert.css"/>
+<style>
+.demo{width:300px; margin:60px auto 10px auto}
+@media only screen and (min-width: 420px) {
+	.demo{width:500px; margin:60px auto 10px auto}
+}
+.tbutton {
+	background-color: #AEDEF4;color: white;border: none;box-shadow: none;
+	font-size: 17px;font-weight: 500;font-weight: 600;
+	border-radius: 3px;padding: 15px 35px;margin: 26px 5px 0 5px;cursor: pointer; }
+.tbutton:hover {background-color: #a1d9f2; }
+</style>
+</head>
+<body>
+
+<div class="demo">
+
+	
+	<div class="demo_3">
+		提示失败：<button class="tbutton">点击这里</button> 
+	</div>
+	
+
+</div>
+		
+<script type="text/javascript" src="jquery.js"></script> 
+<script type="text/javascript" src="sweetalert.min.js"></script>
+<script type="text/javascript">
+$(function() {
+	
+	$(".demo_3 button").click(function() {
+		swal("OMG!", "弹出了一个错误提示框", "error");
+	});
+	
+});
+</script>
+</body>
+</html>
+
